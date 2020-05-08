@@ -49,3 +49,32 @@ class Solution:
           return(False)
         else:
           return(True)
+
+
+
+
+###############################################################
+# from collections import Counter
+# # When a collection of items is passed as parameter to Counter, it will create a dictionary with key being the item of the collection and value being the count of occurance of the item in the collection.
+# temp=0
+# if ransomNote=="" and magazine=="" :
+#   return(True)
+# elif ransomNote=="" and magazine is not None:
+#   return(True)
+# else:
+#   rn = dict(Counter(ransomNote))
+#   m = dict(Counter(magazine))
+#   for i in list(rn.keys()):
+# 	if i not in list(m.keys()):
+# 	# if element in ransomNote is not present in magazine, then the note cannot be formed from the magazine
+# 	  temp=1
+# 	  break
+# 	else:
+# 	  if rn[i] > m[i]:
+# 	  # if count of the element in ransomNote is greater than that in magazine, then the note cannot be formed from the magazine
+# 		temp=1
+# 		break
+# if temp == 1:
+#   return(False)
+# else:
+#   return(True)
