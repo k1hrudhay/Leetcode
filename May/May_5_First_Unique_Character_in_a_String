@@ -1,0 +1,30 @@
+############################   Problem    ####################################
+
+# Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+# Examples:
+
+# s = "leetcode"
+# return 0.
+
+# s = "loveleetcode",
+# return 2.
+# Note: You may assume the string contain only lowercase letters.
+
+############################# Solution ###################
+
+from collections import Counter
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        templ=[]
+        tempi=-1
+        for i in s:
+          if i not in templ:
+            if s.count(i) == 1:
+              tempi=s.index(i)
+              break
+            else:
+              templ.append(i)
+        
+        return tempi
+
