@@ -59,3 +59,25 @@ class Solution:
         return curr
         
         
+        
+        ##########################
+#         self.cnt = 0
+#         self.traverse_count(head)
+#         mid = int((self.cnt-1)//2) if (self.cnt-1)%2 == 0 else int((self.cnt-1)//2+1)
+#         self.node=0
+#         self.traverse(head,mid,0)
+#         return self.node
+        
+        
+#     def traverse_count(self,node):
+#         if node:
+#             self.cnt +=1
+#             self.traverse_count(node.next)
+            
+#     def traverse(self,node,mid,pos):
+#         if node:
+#             if pos == mid:
+#                 self.node = node
+#                 return False
+#             else:
+#                 self.traverse(node.next,mid,pos+1)
