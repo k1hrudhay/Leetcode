@@ -65,3 +65,11 @@ x0, y0, x1, y1 = *coordinates[0], *coordinates[1]
 dx, dy = x1- x0, y1 - y0
 print(all((x - x0) * dy == (y - y0) * dx for x, y in coordinates))
 '''
+
+
+'''
+def checkStraightLine(self, coordinates: List[List[int]]) -> bool:
+    (x0, y0), (x1, y1) = coordinates[: 2]
+    return all((x1 - x0) * (y - y1) == (x - x1) * (y1 - y0) for x, y in coordinates)
+        
+'''
