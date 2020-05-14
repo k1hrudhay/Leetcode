@@ -45,3 +45,12 @@ class Solution:
 
         if stones:return(stones[0])
         else:return 0
+        
+        
+        # stones.sort()
+
+        #   while(len(stones) > 1):
+        #     bisect.insort(stones,stones.pop()-stones.pop())
+        #     # stones.sort(reverse=True)
+
+        #   return(stones[0])
