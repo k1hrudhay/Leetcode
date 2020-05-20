@@ -35,6 +35,7 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 
 #############   Solution ################
 
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -51,6 +52,11 @@ class Solution:
                 node = node.left
             
             else:
+            # the order of pop is the same as
+            # BST order, so the first time will 
+            # pop the smallest element, and so on, 
+            # we track this pop operation, after k 
+            # times, we get the answer
                 node = stack.pop()
                 k-=1
                 print(k)
