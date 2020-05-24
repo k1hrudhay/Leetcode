@@ -46,3 +46,7 @@ class Solution:
 
         return root   
         
+
+
+##########  Time Complexity = O(n)
+########## Space Complexity = O(n)
